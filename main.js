@@ -16,9 +16,14 @@ const makeSpanOrange = function() {
     messSpan.style.color = "orange";
 }
 
+const makeRedImgBorder = function() {
+    triceratops.style.border = "1px solid red";
+}
 
 
 // Event Listeners
 messSpan.addEventListener('click', makeSpanOrange);
+
+triceratops.addEventListener('click', makeRedImgBorder);
 
 
