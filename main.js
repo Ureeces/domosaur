@@ -10,3 +10,15 @@ hiddenDino.style.display = "none";
 
 const triceratops = document.querySelector('#triceratops');
 triceratops.width = "324";
+
+// Events
+const makeSpanOrange = function() {
+    messSpan.style.color = "orange";
+}
+
+
+
+// Event Listeners
+messSpan.addEventListener('click', makeSpanOrange);
+
+
