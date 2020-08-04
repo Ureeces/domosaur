@@ -11,6 +11,8 @@ hiddenDino.style.display = "none";
 const triceratops = document.querySelector('#triceratops');
 triceratops.width = "324";
 
+const feathers = document.querySelector('#feathers');
+
 // Events
 const makeSpanOrange = function() {
     messSpan.style.color = "orange";
@@ -20,10 +22,14 @@ const makeRedImgBorder = function() {
     triceratops.style.border = "1px solid red";
 }
 
+const makeHalfTransparent = function() {
+    feathers.style.opacity = 0.5;
+}
+
 
 // Event Listeners
 messSpan.addEventListener('click', makeSpanOrange);
 
 triceratops.addEventListener('click', makeRedImgBorder);
 
-
+feathers.addEventListener('click', makeHalfTransparent);
