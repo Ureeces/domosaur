@@ -9,13 +9,15 @@ const hiddenDino = document.querySelector('#hide-me-area');
 hiddenDino.style.display = "none";
 
 const triceratops = document.querySelector('#triceratops');
-triceratops.width = "324";
+triceratops.style.width = '324px';
 
 const feathers = document.querySelector('#feathers');
 
 const switchBckgrndButton = document.querySelector('#toggle');
 
 const dinoRow = document.querySelector('#row');
+
+const bigDino = document.querySelector('#biggify');
 
 // Events
 const makeSpanOrange = function() {
@@ -34,6 +36,10 @@ const changeRowColor = function() {
     dinoRow.style.backgroundColor = "goldenrod";
 }
 
+const makeBigDino = function() {
+    bigDino.style.width += "200px";
+}
+
 
 // Event Listeners
 messSpan.addEventListener('click', makeSpanOrange);
@@ -43,3 +49,5 @@ triceratops.addEventListener('click', makeRedImgBorder);
 feathers.addEventListener('click', makeHalfTransparent);
 
 switchBckgrndButton.addEventListener('click', changeRowColor);
+
+bigDino.addEventListener('mouseenter', makeBigDino);
